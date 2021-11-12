@@ -1,7 +1,13 @@
-$primary-color: blue;
+$primary-color: #E5E5E5;
+$primary-font: 'Open Sans', sans-serif;
 
 
 
 body {
     background-color: $primary-color;
+    font-family: $primary-font;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    margin: 1em;
 }
