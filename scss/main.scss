@@ -1,13 +1,128 @@
-$primary-color: #E5E5E5;
-$primary-font: 'Open Sans', sans-serif;
+$primary-font: "Open Sans", sans-serif;
+$primary-color: #e5e5e5;
+$font-color: #282828;
 
-
+// General styles
 
 body {
-    background-color: $primary-color;
-    font-family: $primary-font;
-    font-weight: 600;
-    font-size: 50px;
-    text-align: center;
-    margin: 1em;
+  background-color: $primary-color;
+  font-family: $primary-font;
+  line-height: 1.2;
+  letter-spacing: -0.1em;
+  color: $font-color;
+}
+
+main {
+  padding: 5em;
+}
+
+section {
+  height: 80vh;
+  padding-top: 2em;
+}
+
+h1 {
+  font-size: 3.2em;
+  font-weight: 600;
+  margin-bottom: -0.6em;
+}
+h2 {
+  font-size: 2.2em;
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+p {
+  font-size: 1.3em;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+nav a {
+  text-decoration: none;
+  color: $font-color;
+}
+
+nav a:hover {
+  border-bottom: 0.1em solid $font-color;
+}
+
+section header {
+  border-bottom: 2px solid black;
+  margin-bottom: 4em;
+}
+
+//Global Header
+
+.globalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 25px;
+  padding-left: 3em;
+}
+
+.nav {
+  padding-right: 4em;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+}
+
+.nav__item {
+  padding: 0.4em;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+// intro section
+
+.intro__link {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  font-size: 2.3em;
+  color: $font-color;
+}
+
+// about me section
+
+// projects section
+
+.projects__body {
+  display: grid;
+  gap: 1.2em;
+}
+.projects__item {
+  display: grid;
+  gap: 1.2em;
+  grid-template-columns: 1fr 1fr;
+}
+.projects__item--description {
+  background-color: $primary-color;
+}
+.projects__item--body {
+  background-color: $primary-color;
+  border-radius: 0.3em;
+}
+
+.button {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0.5em 1.2em;
+  border: 3px solid black;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+}
+.button:hover {
+  color: white;
+  background-color: black;
+  transition: 0.5s;
 }

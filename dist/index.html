@@ -2,34 +2,97 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
 
-      <link rel="stylesheet" href="./css/main.css">   
+  <link rel="stylesheet" href="./css/main.css" />
 </head>
 
 <body>
-    <header>
-        Hello from header!!!
-    </header>
+  <header class="globalHeader">
+    <img class="logo" alt="logo"/>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#about" class="nav__link"> About </a></li>
+        <li class="nav__item"><a href="#projects" class="nav__link"> Projects </a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link"> Contact </a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div>
-        Sekcja 1
-    </div>
+  <main>
+    <section class="intro">
+      <h1>Hi, I'm Maciej! 🙂 <br></h1>
+      <h2>Full-stack developer with passion for front-end.</h2>
+      <a href="#projects" id="botao-max"><button class="button">My projects</button></a>
+      <a href="#about" class="intro__link"><i class="fas fa-angle-down"></i></a>
+    </section>
 
-    <footer>
-        Hello from Footer!!!
-    </footer>
+    <section class="about" id="about">
+      <header>
+        <h2>About me</h2>
+      </header>
+      <p>I'm a graduate of computer science with experience working with various technologies.<br>
+        such as C#, ASP.NET MVC, Web API (C#), React, WPF, SharePoint Online,<br>
+        SharePoint Framework and Dynamics 365. I am currently looking for a <br>
+        job where I could develop my interests and skills as front-end developer. <br><br>
+        My current technology stack is:<br>
+        <b>React, Angular, CSS, HTML, SQL, C#</b>
+      </p>
+      <button class="button">Download CV</button>
+    </section>
+
+    <section class="projects" id="projects">
+      <header>
+        <h2>Projects</h2>
+      </header>
+      <div class="projects__body">
+        <div class="projects__item">
+          <div class="projects__item--body">
+            <h3>01 Example</h3>
+          </div>
+          <div class="projects__item--description">
+            <h4>Football CRM</h4>
+            <p></p>
+          </div>
+        </div>
+        <div>
+
+        </div>
+        <div class="projects__item">
+          <h3>02 Example</h3>
+          <div class="projects__item--body">
+            Hello
+          </div>
+        </div>
+        <div class="projects__item">
+          <h3>03 Example</h3>
+          <div class="projects__item--body">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <header>
+        <h2>Contact</h2>
+      </header>
+      <h3>Let's stay in touch</h3>
+    </section>
+  </main>
+  <footer>Hello from Footer!!!</footer>
 
 </body>
 
