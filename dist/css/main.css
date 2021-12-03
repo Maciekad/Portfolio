@@ -2,8 +2,9 @@ body {
   background-color: #e5e5e5;
   font-family: "Open Sans", sans-serif;
   line-height: 1.2;
-  letter-spacing: -0.1em;
+  letter-spacing: -0.1rem;
   color: #282828;
+  font-size: 100%;
 }
 
 main {
@@ -11,23 +12,39 @@ main {
 }
 
 section {
+  height: 100vh;
+  padding: 2em 0 2em;
+}
+
+section:first-child {
   height: 80vh;
-  padding-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section header {
+  border-bottom: 1px solid black;
+  margin-bottom: 4em;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3rem;
   font-weight: 600;
   margin-bottom: -0.6em;
 }
 
 h2 {
-  font-size: 2.2em;
+  font-size: 2em;
   font-weight: 400;
 }
 
 h3 {
-  font-size: 1.4em;
+  font-size: 1em;
   font-weight: 400;
 }
 
@@ -46,9 +63,33 @@ nav a:hover {
   border-bottom: 0.1em solid #282828;
 }
 
-section header {
-  border-bottom: 2px solid black;
-  margin-bottom: 4em;
+@media only screen and (max-width: 767px) {
+  .globalHeader {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    padding-top: 1.2rem;
+  }
+  .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .globalHeader {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .globalHeader {
@@ -62,7 +103,7 @@ section header {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 1.3rem;
   padding-left: 3em;
 }
 
@@ -89,7 +130,7 @@ section header {
   position: absolute;
   bottom: 10%;
   left: 50%;
-  font-size: 2.3em;
+  font-size: 2.3rem;
   color: #282828;
 }
 
@@ -119,7 +160,7 @@ section header {
 .button {
   background-color: rgba(255, 255, 255, 0);
   padding: 0.5em 1.2em;
-  border: 3px solid black;
+  border: 2px solid black;
   font-weight: 600;
   font-size: 1em;
   cursor: pointer;
