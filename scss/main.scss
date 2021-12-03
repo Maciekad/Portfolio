@@ -18,8 +18,8 @@ main {
 }
 
 section {
-  height: 100vh;
-  padding: 2em 0 2em;
+  position: relative;
+  padding: 4em 0 4em;
 }
 
 section header {
@@ -109,17 +109,10 @@ nav a:hover {
 
 // intro section
 
-.intro {
-  height: 80vh;
-  padding-top: 20%;
-  display: flex;
-  flex-direction: column;
-}
-
 .intro__link {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
+  display: block;
+  text-align: center;
+  padding-top: 2em;
   font-size: 2.3rem;
   color: $font-color;
 }
