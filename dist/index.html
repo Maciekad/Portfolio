@@ -22,33 +22,53 @@
 
 <body>
   <header class="globalHeader">
-    <img class="logo" alt="logo"/>
+    <div class="logo" alt="logo">
+      <a href="index.html">
+        <div class="logo__title">
+          MA
+        </div>
+      </a>
+    </div>    
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item"><a href="#about" class="nav__link"> About </a></li>
-        <li class="nav__item"><a href="#projects" class="nav__link"> Projects </a></li>
-        <li class="nav__item"><a href="#contact" class="nav__link"> Contact </a></li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link"> About </a>
+        </li>
+        <li class="nav__item">
+          <a href="#projects" class="nav__link"> Projects </a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link"> Contact </a>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="intro">
-      <h1>Hi, Lorem ipsum dolor!<br></h1>
-      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
-      <a href="#projects" id="botao-max"><button class="button">My projects</button></a>
-      <a href="#about" class="intro__link"><i class="fas fa-angle-down"></i></a>
+      <section class="intro__description">
+        <h1>Hello, I'm Maciej.</h1>
+        <h2>I build things for the web</h2>
+        <p>I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.</p>
+        <a href="#projects" id="botao-max"><button class="button">My projects</button></a>
+      </section>
     </section>
 
     <section class="about" id="about">
       <header>
-        <h2>About me</h2>
+        <h1>About me</h1>
       </header>
-      <p>I'm a graduate of computer science with experience working with various technologies.<br>
-        such as C#, ASP.NET MVC, Web API (C#), React, WPF, SharePoint Online,<br>
-        SharePoint Framework and Dynamics 365. I am currently looking for a <br>
-        job where I could develop my interests and skills as front-end developer. <br><br>
-        My current technology stack is:<br>
+      <p>
+        Hi, I'm Maciej - a full-stack developer currently based in Warsaw, Poland. 
+        During my carrier, I've experience working with many technologies and programming languages. However, what I liked the
+        most was creating web applications, both on the frontend and backend side. <br/><br/>
+        I'm a graduate of computer science with experience working with
+        various technologies 
+        such as C#, ASP.NET MVC, Web API (C#), React, Angular,
+        SharePoint Framework and Dynamics 365.<br/>
+        I am currently looking for a job where I could develop my interests and skills as front-end
+        developer. <br /><br />
+        My current technology stack is:<br />
         <b>React, Angular, CSS, HTML, SQL, C#</b>
       </p>
       <button class="button">Download CV</button>
@@ -56,44 +76,139 @@
 
     <section class="projects" id="projects">
       <header>
-        <h2>Projects</h2>
+        <h2>Check out my projects.</h2>
       </header>
-      <div class="projects__body">
-        <div class="projects__item">
-          <div class="projects__item--body">
-            <h3>01 Example</h3>
-          </div>
-          <div class="projects__item--description">
+      <section class="projects__body">
+       
+        <section class="projects__item">
+          <!-- <section class="projects__item--image">
+            <img src="../projekt2.png">
+          </section> -->
+          <section class="projects__item--icons">
+            <i class="far fa-folder"></i>
+            <div class="projects__item--link">
+              <i class="fab fa-github"></i>
+              <i class="fas fa-external-link-alt"></i>
+            </div>
+          </section>
+          <section class="projects__item--description">
             <h4>Football CRM</h4>
-            <p></p>
-          </div>
-        </div>
-        <div>
+            <p>The subject of the project is related to one of my greatest passions, which is football.
+              It is an application that implements a fan service system for a football club. 
+            </p>
+            <ul class="projects__item--technologies">
+              <li>ASP.NET</li>
+              <li>React</li>
+              <li>Web Api</li>
+              <li>Redux</li>
+              <li>Material UI</li>
+            </ul>
+          </section>
+        </section>
 
-        </div>
-        <div class="projects__item">
-          <h3>02 Example</h3>
-          <div class="projects__item--body">
-            Hello
-          </div>
-        </div>
-        <div class="projects__item">
-          <h3>03 Example</h3>
-          <div class="projects__item--body">
+        <section class="projects__item">
+          <!-- <section class="projects__item--image">
+            <img src="../projekt2.png">
+          </section> -->
+          <section class="projects__item--icons">
+            <i class="far fa-folder"></i>
+            <div class="projects__item--link">
+              <i class="fab fa-github"></i>
+              <i class="fas fa-external-link-alt"></i>
+            </div>
+          </section>
+          <section class="projects__item--description">
+            <h4>Book Club App</h4>
+            <p>Web application build with React, Html, SASS
+            </p>
+            <ul class="projects__item--technologies">
+              <li>React</li>
+              <li>SASS</li>
+              <li>JavaScript</li>
+            </ul>
+          </section>
+        </section>
 
-          </div>
-        </div>
-      </div>
+        
+        <section class="projects__item">
+          <!-- <section class="projects__item--image">
+            <img src="../projekt3.png">
+          </section> -->
+          <section class="projects__item--icons">
+            <i class="far fa-folder"></i>
+            <div class="projects__item--link">
+              <i class="fab fa-github"></i>
+              <i class="fas fa-external-link-alt"></i>
+            </div>
+          </section>
+          <section class="projects__item--description">
+            <h4>Portfolio</h4>
+            <p>Personal portfolio build with HTML, SASS and JavaSCript 
+            <ul class="projects__item--technologies">
+              <li>HTML</li>
+              <li>SASS</li>
+              <li>JavaScript</li>
+            </ul>
+          </section>
+        </section>
+
+        <section class="projects__item">
+          <!-- <section class="projects__item--image">
+            <img src="../projekt2.png">
+          </section> -->
+          <section class="projects__item--icons">
+            <i class="far fa-folder"></i>
+            <div class="projects__item--link">
+              <i class="fab fa-github"></i>
+              <i class="fas fa-external-link-alt"></i>
+            </div>
+          </section>
+          <section class="projects__item--description">
+            <h4>Football CRM</h4>
+            <p>The subject of the project is related to one of my greatest passions, which is football.
+              It is an application that implements a fan service system for a football club. 
+            </p>
+            <ul class="projects__item--technologies">
+              <li>ASP.NET</li>
+              <li>React</li>
+              <li>Web Api</li>
+              <li>Redux</li>
+              <li>Material UI</li>
+            </ul>
+          </section>
+        </section>
+
+
+      </section>
     </section>
     <section class="contact" id="contact">
       <header>
-        <h2>Contact</h2>
+        <h1>Contact</h1>
       </header>
-      <h3>Let's stay in touch</h3>
+      <section class="contact__body">
+        <section class="contact__body--content">
+          <p>You can't find me easily on Linkedin or Github. If not send me a direct message.</p>
+          <section class="contact__body--links">
+            <a href="www.wykop.pl">
+              <i class="fab fa-linkedin"></i>
+              <p>Linkedin</p>
+            </a>
+            <a href="www.google.com">
+              <i class="fab fa-github"></i>
+              <p>Github</p>
+            </a>
+          </section>
+        </section>
+        <section class="contact__body--form">
+          <form>
+            <input type="email" id="fname" name="fname" placeholder="Your email"><br>
+            <textarea placeholder="Write your message here..."></textarea>
+            <input class="button" type="submit" value="Send">
+          </form>
+        </section>
+      </section>
     </section>
   </main>
-  <footer>Hello from Footer!!!</footer>
-
+  <footer></footer>
 </body>
-
 </html>
